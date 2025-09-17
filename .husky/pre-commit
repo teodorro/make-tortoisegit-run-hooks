@@ -1,4 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx lint-staged
+npx lint-staged || exit 1       # fast: eslint etc.
+npx tsc -p frontTtr/tsconfig.json --noEmit || exit 1   # quick project typecheck
