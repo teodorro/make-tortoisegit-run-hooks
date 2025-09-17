@@ -1,0 +1,11 @@
+{
+  "name": "root-config",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "test": "cd FrontTtr && npm test"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}
