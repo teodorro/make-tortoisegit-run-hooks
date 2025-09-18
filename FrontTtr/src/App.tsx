@@ -7,7 +7,6 @@ function App() {
   const [count, setCount] = useState(0);
 
   const foo = (): number | undefined => 1;
-  console.log('test');
 
   return (
     <>
