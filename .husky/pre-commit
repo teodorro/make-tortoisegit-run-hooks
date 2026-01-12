@@ -1,5 +1,5 @@
 #!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
 
+cd FrontTtr || exit 1
 npx lint-staged
-cd FrontTtr && npm run typecheck && cd -
+npm run typecheck
