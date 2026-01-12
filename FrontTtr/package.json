@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite && cd .. && npm install && husky",
     "build": "tsc -b && vite build",
     "lint": "eslint src/**/*.{ts,tsx} --ignore-pattern src/app/**",
     "test": "jest --passWithNoTests",
